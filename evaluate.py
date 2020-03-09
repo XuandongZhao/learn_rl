@@ -1,4 +1,4 @@
-def offlineEvaluate(mab, arms, rewards, contexts, num_of_events=10000, nrounds=None):
+def offlineEvaluate(mab, arms, rewards, contexts, nrounds=None, num_of_events=10000):
     """
     Offline evaluation of a multi-armed bandit
 
