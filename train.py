@@ -97,6 +97,7 @@ def main():
     plt.xlabel('Rounds')
     plt.legend()
     plt.show()
+    plt.savefig('compare.png')
 
     # First Interval [0.2 0.4 0.6 0.8 1. ]
     alpha_range_one_decimal = np.linspace(0, 1, 6)
@@ -119,6 +120,7 @@ def main():
     plt.xlabel('apha_range')
 
     plt.show()
+    plt.savefig('LinUCB.png')
 
     # First Interval [0.2 0.4 0.6 0.8 1. ]
     v_range_one_decimal = np.linspace(0, 1, 6)
@@ -140,6 +142,7 @@ def main():
     plt.xlabel('v_range')
 
     plt.show()
+    plt.savefig('LinThom.png')
 
 
 if __name__ == '__main__':

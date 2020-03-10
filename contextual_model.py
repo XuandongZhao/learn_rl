@@ -104,8 +104,7 @@ class LinThompson(MAB):
     def __init__(self, narms, ndims, v):
         assert (narms > 0), "narms must be positive integers"
         assert (ndims > 0), "ndims must be positive integers"
-        assert ((type(v) == float or type(alpha) == np.float64) and v > 0.0 and np.isreal(
-            v)), "v must be real positive floating number"
+        assert (type(v) == float and v > 0.0 and np.isreal(v)), "v must be real positive floating number"
         self.narms = narms
         self.ndims = ndims
         self.v = v
