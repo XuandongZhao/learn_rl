@@ -96,8 +96,9 @@ def main():
     plt.ylabel('Per-Round Cumulative Reward')
     plt.xlabel('Rounds')
     plt.legend()
-    plt.show()
     plt.savefig('compare.png')
+    plt.show()
+
 
     # First Interval [0.2 0.4 0.6 0.8 1. ]
     alpha_range_one_decimal = np.linspace(0, 1, 6)
@@ -118,9 +119,8 @@ def main():
     plt.plot(alpha_range, results_LinUCB_with_alpha, linestyle='dashed')
     plt.ylabel('mean_reward')
     plt.xlabel('apha_range')
-
-    plt.show()
     plt.savefig('LinUCB.png')
+    plt.show()
 
     # First Interval [0.2 0.4 0.6 0.8 1. ]
     v_range_one_decimal = np.linspace(0, 1, 6)
@@ -140,9 +140,9 @@ def main():
     plt.plot(v_range, resutls_LinThompson_with_v, linestyle='dashed')
     plt.ylabel('mean_reward')
     plt.xlabel('v_range')
-
-    plt.show()
     plt.savefig('LinThom.png')
+    plt.show()
+
 
 
 if __name__ == '__main__':
