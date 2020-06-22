@@ -1,3 +1,3 @@
-# learnMAB
+# learn_rl
 
-Multi-Armed Bandits algorithms
+code and slides about RL
